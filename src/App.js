@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/projects" exact component={Projects} />
